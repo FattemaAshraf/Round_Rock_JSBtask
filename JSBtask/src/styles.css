@@ -1,3 +1,5 @@
+@import '~@fortawesome/fontawesome-free/css/fontawesome.min.css'; 
+
 /* start variables */
 :root {
   --main-color: #6d91ee;
@@ -350,4 +352,17 @@ header .container .description .bold-lorem {
   -moz-border-radius:2.5rem;
   -ms-border-radius:2.5rem;
   -o-border-radius:2.5rem;
+}
+/* end  testymonials section */
+/* start contact section */
+.contact{
+  padding: 8rem 0 8rem;
+
+}
+
+/* end contact section */
+
+footer{
+  height: 9.0625rem;
+background-color: var(--dark-blue);
 }
