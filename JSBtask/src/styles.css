@@ -1,1 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
+/* start variables */
+:root {
+  --main-color: #6d91ee;
+  --secondary-color: #4f4f4f;
+  --white-color: #fff;
+  --dark-blue: #0c1e49;
+}
+/* end variables */
+/* start Global Rules */
+* {
+  box-sizing: content-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* end Global Rules */
+/* start Components -- override the bootstrap Colors */
+.btn-primary {
+  --bs-btn-color: var(--white-color);
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-border-color: var(--main-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+.btn-small {
+  border-radius: 20px;
+  /* width: 167px;
+  height: 50px; */
+  flex-shrink: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.btn-large {
+  border-radius: 71px;
+  /* width: 280px;
+  height: 86px; */
+  font-size: 24px;
+  font-weight: 700;
+}
+/* end components */
+/* start Header */
+header {
+  /* background-color: var(--white-color); */
+  height: 100vh;
+  position: relative;
+  background: left 5% / 15% 60% no-repeat url("assets/Vector7.png");
+  background: lightgray 50% / cover no-repeat url(assets/Vector7.png)
+}
+header .container .title {
+  color: var(--main-color);
+}
+header .container svg {
+  width: 5.1875rem;
+  height: 3.6875rem;
+}
+header .container .logo {
+  margin-bottom: 125px;
+}
+header .container .title h2 {
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118.5%;
+}
+header .container .title p {
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 118.5%;
+  letter-spacing: 0.99094rem;
+}
+@media (max-width: 768px) {
+  header .container .title h2 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118.5%;
+  }
+  header .container .title p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 118.5%;
+    letter-spacing: 0.33rem;
+  }
+
+}
+header .container .description {
+  color: var(--secondary-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+header .container .description p {
+  max-width: 30rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.59375rem;
+}
+header .container .description .small-lorem {
+  color: var(--Gray-2, #4f4f4f);
+  font-size: 90px;
+  font-weight: 250;
+  line-height: 5.59375rem;
+}
+
+header .container .description .bold-lorem {
+  color: var(--Gray-2, #4f4f4f);
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 5.59375rem;
+  margin-top: -5px;
+}
+@media (max-width: 768px) {
+  header .container .description .small-lorem {
+    font-size: 60px;
+   
+  }
+  header .container .description .bold-lorem {
+    font-size: 30px;
+    line-height: 1;
+
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  
+  header .container .description .small-lorem {
+    font-size: 80px;
+    line-height: 5rem;
+    
+  }
+  header .container .description .bold-lorem {
+    font-size: 30px;
+    line-height: 1;
+
+  }
+}
+/* end Header */
