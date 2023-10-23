@@ -1,0 +1,48 @@
+ <!-- start contact section -->
+  <!-- <div class="contact">
+    <div class="container">
+      <div class="special-heading">Contact Us</div>
+  <div class="row gap-4 justify-content-center">
+    <div class="form-group col-lg-4 col-sm-12">
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <div class="info-contact col-lg-4 col-sm-12 align-self-center text-lg-start text-sm-center">
+      <div class="mail d-flex ">
+        <i class="fa-envelope"></i>
+        <div class="h5">upskilling.eg1@gmail.com</div>
+      </div>
+      <div class="number d-flex">
+        <i class="fa-solid fa-phone"></i>
+        <div class="h5">+20 115 493 2137</div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div> -->
+
+  <form  #form="ngForm" (ngSubmit)="addContact()">
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name"
+        name="name" [(ngModel)] = "addContect.name">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email"
+        name="email" [(ngModel)] = "addContect.email">
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="number" class="form-control" id="phone"
+        name="phone" [(ngModel)] = "addContect.phone">
+      </div>
+    <button type="submit">Submit</button>
+  </form>
+  <!-- end contact section -->

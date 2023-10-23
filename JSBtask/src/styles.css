@@ -1,4 +1,5 @@
-@import '~@fortawesome/fontawesome-free/css/fontawesome.min.css'; 
+@import '~bootstrap/dist/css/bootstrap.min.css'; 
+@import '~font-awesome/css/font-awesome.min.css'; 
 
 /* start variables */
 :root {
@@ -16,8 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
 }
 /* end Global Rules */
@@ -366,3 +367,6 @@ footer{
   height: 9.0625rem;
 background-color: var(--dark-blue);
 }
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
